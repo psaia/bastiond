@@ -13,7 +13,7 @@ The purpose of bastiond is the following:
 3. Connect with your cloud provider(s). (`bd connect gcloud`)
 4. Use `git` to pull your Kubernetes and/or Terraform files and orchestrate as usual.
 
-```shell
+```bash
 $ bd workspace create aws/todo-app
 todo-app for AWS has been created.
 $ bd workspace create gcloud/todo-app
