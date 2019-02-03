@@ -36,19 +36,19 @@ $ kubectl apply -f my-app.yaml
 A workspace in bastiond is a stateful and restricted environment that is connected to a cloud provider. Your workspace will
 always be saved along with a full history log.
 
-###### List: `bd workspace list`
+#### List: `bd workspace list`
 
 List all available workspaces.
 
-###### Create: `bd workspace create [gcloud|aws|azure]/[project name]`
+#### Create: `bd workspace create [gcloud|aws|azure]/[project name]`
 
 Create and switch to a new cloud environment.
 
-###### Change: `bd workspace change [project name]`
+#### Change: `bd workspace change [project name]`
 
 Switch to a workspace.
 
-###### Remove: `bd workspace remove [project name]`
+#### Remove: `bd workspace remove [project name]`
 
 Permenantly remove a workspace.
 
