@@ -9,9 +9,8 @@ The purpose of bastiond is the following:
 ## How to use it:
 
 1. Authenticate with the bastiond web terminal.
-2. Create a workspace. (`bd workspace create my-awesome-app`)
-3. Connect with your cloud provider(s). (`bd connect gcloud`)
-4. Use `git` to pull your Kubernetes and/or Terraform files and orchestrate as usual.
+2. Create a workspace. (`bd workspace create [aws|azure|gcloud]/my-awesome-app-staging`)
+3. Use `git` to pull your Kubernetes and/or Terraform files or create from scratch and orchestrate as usual.
 
 ```bash
 $ bd workspace create aws/todo-app
@@ -24,3 +23,48 @@ $ ... Create or checkout terraform or k8s files ...
 $ terraform apply
 $ kubectl apply -f my-app.yaml
 ```
+
+## Web CLI Documentation
+
+* [Workspaces](#workspaces)
+* [Webhooks](#webhooks)
+* [Access Management](#access-management)
+* [Account Management](#account-management)
+
+### Workspaces
+
+A workspace in bastiond is a stateful and restricted environment that is connected to a cloud provider. Your workspace will
+always be saved along with a full history log.
+
+###### List: `bd workspace list`
+
+List all available workspaces.
+
+###### Create: `bd workspace create [gcloud|aws|azure]/[project name]`
+
+Create and switch to a new cloud environment.
+
+###### Change: `bd workspace change [project name]`
+
+Switch to a workspace.
+
+###### Remove: `bd workspace remove [project name]`
+
+Permenantly remove a workspace.
+
+### Webhooks
+
+Webhooks allow you to create powerful automations using your Git providers, communication tools, and CI tools.
+
+Some common use cases are:
+
+* Create incoming webhook for CI to trigger a deployment configuration. 
+* Create outgoing webhook to deliver a payload of logs after a deployment is executed.
+
+### Access Management
+
+You can easily share access to a workspace to anyone using bastiond.
+
+### Account Management
+
+Update email, password, 2FA, etc.
