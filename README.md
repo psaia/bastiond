@@ -6,6 +6,8 @@ The purpose of bastiond is the following:
 * Ability to create private endpoints (API) to trigger deployments and outgoing webhooks for delivering logs and alerts.
 * Ability to create and save your state and govern access.
 
+![diagram](https://i.imgur.com/PubZNMM.png)
+
 ## How to use it:
 
 1. Authenticate with the bastiond web terminal.
