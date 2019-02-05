@@ -3,7 +3,7 @@
 The purpose of bastiond is the following:
 
 * A central and secure terminal for managing infrastructure using tools like [Terraform](https://www.terraform.io/) and [Kubernetes](https://kubernetes.io/) on all major cloud providers.
-* Ability to create private endpoints to triggers deployments and outgoing webhooks for delivering logs and alerts.
+* Ability to create private endpoints (API) to trigger deployments and outgoing webhooks for delivering logs and alerts.
 * Ability to create and save your state and govern access.
 
 ## How to use it:
@@ -60,7 +60,6 @@ Some common use cases are:
 
 * Create incoming webhook for CI to trigger a deployment configuration. 
 * Create outgoing webhook to deliver a payload of logs after a deployment is executed.
-
 
 ### Access Management
 
