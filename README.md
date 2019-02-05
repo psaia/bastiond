@@ -2,7 +2,7 @@
 
 The purpose of bastiond is the following:
 
-* A central and secure terminal for managing infrastructure using [Terraform](https://www.terraform.io/) and [Kubernetes](https://kubernetes.io/) on all major cloud providers.
+* A central and secure terminal for managing infrastructure using tools like [Terraform](https://www.terraform.io/) and [Kubernetes](https://kubernetes.io/) on all major cloud providers.
 * Ability to create private endpoints to triggers deployments and outgoing webhooks for delivering logs and alerts.
 * Ability to create and save your state and govern access.
 
@@ -36,19 +36,19 @@ $ kubectl apply -f my-app.yaml
 A workspace in bastiond is a stateful and restricted environment that is connected to a cloud provider. Your workspace will
 always be saved along with a full history log.
 
-#### List: `bd workspace list`
+**List: `bd workspace list`**
 
 List all available workspaces.
 
-#### Create: `bd workspace create [gcloud|aws|azure]/[project name]`
+**Create: `bd workspace create [gcloud|aws|azure]/[project name]`**
 
 Create and switch to a new cloud environment.
 
-#### Change: `bd workspace change [project name]`
+**Change: `bd workspace change [project name]`**
 
 Switch to a workspace.
 
-#### Remove: `bd workspace remove [project name]`
+**Remove: `bd workspace remove [project name]`**
 
 Permenantly remove a workspace.
 
@@ -60,6 +60,7 @@ Some common use cases are:
 
 * Create incoming webhook for CI to trigger a deployment configuration. 
 * Create outgoing webhook to deliver a payload of logs after a deployment is executed.
+
 
 ### Access Management
 
